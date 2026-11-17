@@ -1,0 +1,61 @@
+{
+  "target": "price",
+  "rows": 6019,
+  "features": [
+    "s_no",
+    "name",
+    "location",
+    "year",
+    "kilometers_driven",
+    "fuel_type",
+    "transmission",
+    "owner_type",
+    "mileage",
+    "engine",
+    "power",
+    "seats",
+    "new_price"
+  ],
+  "train_rows": 1805,
+  "test_rows": 4214,
+  "test_size": 0.7,
+  "metrics": {
+    "random_forest": {
+      "r2": 0.769158,
+      "mae": 2.526943,
+      "rmse": 5.381787
+    },
+    "decision_tree": {
+      "r2": 0.670748,
+      "mae": 3.085098,
+      "rmse": 6.427373
+    },
+    "linear_regression": {
+      "r2": 0.682443,
+      "mae": 3.063319,
+      "rmse": 6.312189
+    },
+    "knn": {
+      "r2": 0.739402,
+      "mae": 2.429335,
+      "rmse": 5.71814
+    },
+    "ensemble": {
+      "r2": 0.775088,
+      "mae": 2.364263,
+      "rmse": 5.312209
+    }
+  },
+  "cross_validation_r2": {
+    "random_forest": 0.6849016942566392,
+    "decision_tree": 0.6314010567292212,
+    "linear_regression": 0.6456823658449427,
+    "knn": 0.6585227238540942
+  },
+  "ensemble_weights": {
+    "random_forest": 0.2613621999610705,
+    "decision_tree": 0.24094606660829448,
+    "linear_regression": 0.24639589159793807,
+    "knn": 0.251295841832697
+  }
+}
